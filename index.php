@@ -168,7 +168,15 @@ if ($_POST){
                
 
      
-    echo  "Thanks for playing! Your score is: ".$score."<br>"."<br>"; 
+    echo  "<h3>"."Thanks for playing! Your score is: ".$score."</h3>"; 
+    if ($score>15) {
+        echo "(You did well!)"."<br>"."<br>";
+    } elseif ($score>10) {
+        echo "(You did okay, could do better!)"."<br>"."<br>";
+    } else {
+        echo "Better luck next time :("."<br>"."<br>";
+    }
+
 }
 
 
@@ -186,7 +194,7 @@ $questions = array ( array ('1. Jack and Jill went... <br>',
                             '8.How did the big bad wolf ruin the houses of the three little piggies? <br>' ,
                             '9.This little piggy went to the market, this little piggy... <br>',
                             '10.Three little kittens have lost their... <br>' ,
-                            '11. Jack and Jill... <br>',
+                            '11. Jack and Jill went... <br>',
                             '12.The eensy weensy spider... <br>' ,
                             '13.Twinkle, twinkle little... <br>',
                             '14.Who did the Big Bad Wolf not give any wool to? <br>' ,
